@@ -1,86 +1,85 @@
 <html>
 <head>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
 
 <!-- 
-  <form id= "formoid" action="billing.html"> -->
+<form id= "formoid" action="billing.html"> -->
 
-   <table align ="center">
-     <tr>
-       <td colspan="5"> <h2 align="center">   <i>Customer Details </i>   </h2></td>
-     </tr>
-     <tr>
-      <td>Vechicle Number:</td>
-      <td><input type="text" id="vehicleNumber" name="vehicle_Number" /></td>
-
-      <td>Vechicle Type:</td>
-      <td><input type="text" id="vehicleType" name="vehicle_Type" /></td>
-    </tr>
-    <br>
-
-    <tr>
-      <td>Coustomer Name:</td>
-      <td><input type="text" id="customerName" name="Customer_Name" /></td>
-
-      <td>Phone Number:</td>
-      <td><input type="text" id="phoneNumber" name="Phone_Number" /></td>
-    </tr>
-
-    <tr>
-
-    </tr>
-
-    <tr>
-      <td>Address:</td>
-      <td><input type="text" id="address" name="Address" /></td>
-    </tr>
-
-  </table>
-
-
-  <br/><br/>
-
-  <table border="1" cellspacing="0" id = "spareParts" align ="center">
-
-  
+ <table align ="center">
    <tr>
-     <td colspan="5"> <h2 align="center"><i>Billing Details</i></h2></td>
+     <td colspan="5"> <h2 align="center">   <i>Customer Details </i>   </h2></td>
    </tr>
    <tr>
-  <td colspan="3">Service Fee:</td>
-  <td colspan="3"><input type="number" id="serviceFee" name="Service_Fee" required="true"/></td>
+    <td>Vechicle Number:</td>
+    <td><input type="text" id="vehicleNumber" name="vehicle_Number" /></td>
+
+    <td>Vechicle Type:</td>
+    <td><input type="text" id="vehicleType" name="vehicle_Type" /></td>
   </tr>
-   <tr>
-    <th><input class='check_all' type='checkbox' onclick="select_all()"/></th>
-    <th>S. No</th>
-    <th>Name</th>
-    <th>Price</th>
+  <br>
+
+  <tr>
+    <td>Coustomer Name:</td>
+    <td><input type="text" id="customerName" name="Customer_Name" /></td>
+
+    <td>Phone Number:</td>
+    <td><input type="text" id="phoneNumber" name="Phone_Number" /></td>
+  </tr>
+
+  <tr>
 
   </tr>
+
   <tr>
-    <td><input type='checkbox' class='case'/></td>
-    <td><span id='snum'>1.</span></td>
-    <td><input type='text' id='part_name' name='part_name[]' required="true" /></td>
-    <td><input type='text' class='rates' id='price1' name='price[]' required="true"/></td>
+    <td>Address:</td>
+    <td><input type="text" id="address" name="Address" /></td>
   </tr>
+
+</table>
+
+
+<br/><br/>
+
+<table border="1" cellspacing="0" id = "spareParts" align ="center">
+
+ <tr>
+   <td colspan="5"> <h2 align="center"><i>Billing Details</i></h2></td>
+ </tr>
+ <tr>
+<td colspan="3">Service Fee:</td>
+<td colspan="3"><input type="number" id="serviceFee" name="Service_Fee" required="true"/></td>
+</tr>
+ <tr>
+  <th><input class='check_all' type='checkbox' onclick="select_all()"/></th>
+  <th>S. No</th>
+  <th>Name</th>
+  <th>Price</th>
+
+</tr>
+<tr>
+  <td><input type='checkbox' class='case'/></td>
+  <td><span id='snum'>1.</span></td>
+  <td><input type='text' id='part_name' name='part_name[]' required="true" /></td>
+  <td><input type='text' class='rates' id='price1' name='price[]' required="true"/></td>
+</tr>
 </table>
 
 <br/>
 <div align="center">
 
-  <button type="button" class='delete'>- Delete Spare Part</button>
-  <button type="button" class='addmore'>+ Add Another Spare Part</button>
+<button type="button" class='delete'>- Delete Spare Part</button>
+<button type="button" class='addmore'>+ Add Another Spare Part</button>
 </div>
 </div>
 <br/><br/>
 <div align = "center">
-  <button type="button" class='total' onclick="tot()">Get Total Amout</button>
+<button type="button" class='total' onclick="tot()">Get Total Amout</button>
 </div>
 </br></br>
 <div align = "center">
@@ -90,11 +89,11 @@
 <td><p id="demo"></p></td>
 </tr>
 </table>
-  
+
 </div>
 </br></br>
 <div align="center">
-  <table>
+<table>
 <tr>
 <td colspan="5"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#privew">Privew</button></td>
 <td></td><td></td>
@@ -105,107 +104,107 @@
 <br/><br/>
 
 <div class="container">
-  <div class="modal fade" id="privew" role="dialog">
-    <div class="modal-dialog">
+<div class="modal fade" id="privew" role="dialog">
+  <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p align="center"> Bill Details</p>
-          <table>
-            <tr>
-              <td id='t1'></td>
-            </tr>
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          
-        </div>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
       </div>
-      
+      <div class="modal-body">
+        <p align="center"> Bill Details</p>
+        <table>
+          <tr>
+            <td id='t1'></td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
     </div>
+    
   </div>
-  
+</div>
+
 </div>
 
 <div class="container">
-  <div class="modal fade" id="print" role="dialog">
-    <div class="modal-dialog">
+<div class="modal fade" id="print" role="dialog">
+  <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p align="center"> Bill Details</p>
-          <table>
-            <tr>
-              <td id='t1'></td>
-            </tr>
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-default" onclick="window.print()">Print</button>
-        </div>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
       </div>
-      
+      <div class="modal-body">
+        <p align="center"> Bill Details</p>
+        <table>
+          <tr>
+            <td id='t1'></td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" onclick="window.print()">Print</button>
+      </div>
     </div>
+    
   </div>
-  
+</div>
+
 </div>
 
 
 <script>
-  $(".delete").on('click', function() {
-   $('.case:checkbox:checked').parents("tr").remove();
-   $('.check_all').prop("checked", false); 
-   check();
+$(".delete").on('click', function() {
+ $('.case:checkbox:checked').parents("tr").remove();
+ $('.check_all').prop("checked", false); 
+ check();
 
+});
+var i=2;
+$(".addmore").on('click',function(){
+ count=$('#spareParts tr').length - 2;
+ var data="<tr><td><input type='checkbox' class='case'/></td><td><span id='snum"+i+"'>"+count+".</span></td>";
+ data +="<td><input type='text' id='part_name"+i+"' name='part_name[]'/></td> <td><input type='text' class='rates' id='price"+i+"' name='price[]'/></td>";
+ $('#spareParts').append(data);
+ i++;
+});
+
+
+function select_all() {
+ $('input[class=case]:checkbox').each(function(){ 
+  if($('input[class=check_all]:checkbox:checked').length == 0){ 
+   $(this).prop("checked", false); 
+ } else {
+   $(this).prop("checked", true); 
+ } 
+});
+}
+
+function check(){
+ obj=$('table tr').find('span');
+ $.each( obj, function( key, value ) {
+   id=value.id;
+   $('#'+id).html(key+1);
  });
-  var i=2;
-  $(".addmore").on('click',function(){
-   count=$('#spareParts tr').length - 2;
-   var data="<tr><td><input type='checkbox' class='case'/></td><td><span id='snum"+i+"'>"+count+".</span></td>";
-   data +="<td><input type='text' id='part_name"+i+"' name='part_name[]'/></td> <td><input type='text' class='rates' id='price"+i+"' name='price[]'/></td>";
-   $('#spareParts').append(data);
-   i++;
- });
+}
 
+function tot(){
+count=$('table tr').length;
+var total = Number($('#serviceFee').val());
+$('.rates').each(function(){
+  total += Number($(this).val());
 
-  function select_all() {
-   $('input[class=case]:checkbox').each(function(){ 
-    if($('input[class=check_all]:checkbox:checked').length == 0){ 
-     $(this).prop("checked", false); 
-   } else {
-     $(this).prop("checked", true); 
-   } 
- });
- }
-
- function check(){
-   obj=$('table tr').find('span');
-   $.each( obj, function( key, value ) {
-     id=value.id;
-     $('#'+id).html(key+1);
-   });
- }
-
- function tot(){
-  count=$('table tr').length;
-  var total = Number($('#serviceFee').val());
-  $('.rates').each(function(){
-    total += Number($(this).val());
-
-  });
-  document.getElementById("demo").innerHTML = total
+});
+document.getElementById("demo").innerHTML = total
 }
 
 
